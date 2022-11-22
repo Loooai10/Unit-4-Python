@@ -26,19 +26,19 @@ for film in films:
     # lab 2
 Dictionaries = [
     {
-        'title': 'Gone Girl',
-        'author': 'Alya',
+        'title': 'The Lord of the Rings',
+        'author': 'J.R.R. Tolkien',
         'alreadyRead': True
     },
    {
-        'title': 'Biill',
-        'author': 'Ahmed',
+        'title': 'The Hobbit',
+        'author': 'J.R.R. Tolkien',
         'alreadyRead': True
     },
 	{
-        'title': 'Gon',
-        'author': 'Salman',
-        'alreadyRead': True
+        'title': 'Little woman',
+        'author': 'Delan',
+        'alreadyRead': False
     },
 ]
 for book in Dictionaries:
