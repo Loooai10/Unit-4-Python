@@ -23,6 +23,15 @@ films = [{'title': 'Moaalem Ramadan',
 for film in films:
     print(f'Puff the {film["title"]} lasts for {film["duration"]}. Stars: {film["stars"]}')
 
+movies = [{
+    title: 'Fast and Furios 7',
+    duration: 'Almost 1 hour 14 minutes',
+    stars:['Vin', 'kevin Hart', 'Dwayane The Rock Johnson', 'Robin Williams']
+},
+]
+for m in movies:
+    print(f"{m['title']} last for {m ['duration']}. Stars: {stars}")
+    
     # lab 2
 Dictionaries = [
     {
@@ -47,3 +56,7 @@ for book in Dictionaries:
 		print(f"You already read{book['title']} by {book['author']}")
 	else:
 		print("not read")
+
+for b  in books:
+    if b['alreadyRead']:
+        print(f'')

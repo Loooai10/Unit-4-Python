@@ -2,13 +2,13 @@
 # solution
 # Exercise 1
 
-students = ['Tina', 'Fred', 'Wilma']
+students = ['Tina', 'Fred', 'Wilma', 'carlos', 'adam', 'lee']
 print(students[1])
 print(students[-1])
 
 # Exercise 2
 
-foods = ('Cheeseburger', 'Pizza', 'Stuffed Bell Pepper')
+foods = ('Cheeseburger', 'Pizza', 'Stuffed Bell Pepper', 'ice cream', 'pasta', 'steak')
 for food in foods:
   print(f"{food} is a good food!")
 
@@ -16,7 +16,13 @@ for food in foods:
 
 for food in foods[-2:]:
   print(food)
-
+  # To print all food 
+# for f in foods:
+#   print(f"{f} is good")
+#  to print all food 
+# (one, tow, *favs) = foods
+# for fav in favs:
+#   print(f"{fav}")
 # Exercise 4
 
 home_town = {
@@ -32,7 +38,6 @@ for key, value in home_town.items():
   print(f"{key} = {value}")
 
 # Exercise 6
-
 cohort = []
 
 for index, student in enumerate(students):
@@ -43,6 +48,14 @@ for index, student in enumerate(students):
 
 for student in cohort:
   print(student)
+
+
+student={  'student': 'Tina','fav_food': 'Cheeseburger'}
+cohort=[]
+cohort.append(student)
+for student in cohort:
+  print(student)
+
 
 # Exercise 7
 

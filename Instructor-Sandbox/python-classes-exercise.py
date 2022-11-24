@@ -1,45 +1,45 @@
 
-# class BankAccount():
-#     def __init__(self, type, balance = 0, overdraft_fees = 0):
-#         self.type = type
-#         self.balance = balance
-#         self.overdraft_fees = overdraft_fees
+class BankAccount():
+    def __init__(self, type, balance = 0, overdraft_fees = 0):
+        self.type = type
+        self.balance = balance
+        self.overdraft_fees = overdraft_fees
 
-#     def deposit(self, amount):
-#         self.balance += amount
-#         return self.balance
+    def deposit(self, amount):
+        self.balance += amount
+        return self.balance
 
-#     def withdraw(self, amount):
-#         # if our balance becomes negative, prevent withdrawing money
-#         current_balance = self.balance - amount
-#         if ((current_balance - self.overdraft_fees) < -100):
-#             print("You cannot withdraw money, insufficient funds")
-#             return 0
+    def withdraw(self, amount):
+        # if our balance becomes negative, prevent withdrawing money
+        current_balance = self.balance - amount
+        if ((current_balance - self.overdraft_fees) < -100):
+            print("You cannot withdraw money, insufficient funds")
+            return 0
 
-#         if (current_balance > 0):
-#             self.balance -= amount
-#             return amount
-#             # return self.balance
-#         else: # negative current_balance
-#             self.overdraft_fees += 20
-#             self.balance -= amount
-#             return amount
+        if (current_balance > 0):
+            self.balance -= amount
+            return amount
+            # return self.balance
+        else: # negative current_balance
+            self.overdraft_fees += 20
+            self.balance -= amount
+            return amount
 
 
-#     def __str__(self):
-#         return f"Your {self.type} account balance is: {self.balance} and your overdraft fees are: {self.overdraft_fees}"
+    def __str__(self):
+        return f"Your {self.type} account balance is: {self.balance} and your overdraft fees are: {self.overdraft_fees}"
 
-# my_savings = BankAccount('savings', 50)
+my_savings = BankAccount('savings', 50)
 
-# my_checking = BankAccount('checking')
+my_checking = BankAccount('checking')
 
-# money = my_savings.withdraw(100)
-# print(my_savings)
-# money = my_savings.withdraw(100)
-# print(my_savings)
+money = my_savings.withdraw(100)
+print(my_savings)
+money = my_savings.withdraw(100)
+print(my_savings)
 
-# my_checking.deposit(money)
-# print(my_checking)
+my_checking.deposit(money)
+print(my_checking)
 
 
 
